@@ -1655,6 +1655,15 @@ pre .javascript .function {
   margin-top: 5px;
   text-align: center;
 }
+img:hover {
+/* 鼠标经过停止头像旋转 
+  -webkit-animation-play-state:paused;
+  animation-play-state:paused;*/
+/* 鼠标经过头像旋转360度 */
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
 .links-of-author {
   margin-top: 20px;
 }
@@ -1669,7 +1678,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8fffa8;
+  background: #38a2fc;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
